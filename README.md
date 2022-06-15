@@ -1,8 +1,8 @@
-# contacts-app
+# Contacts-app
 una sencilla aplicacion web donde puedes crear una cuenta y añadir contactos, editarlos, eliminarlos etc...
 tencnologias usadas: express, mysql, multer y muchas mas
 
-## resultado final
+## Resultado final
 <img src="./preview1.PNG">
 <img src="./preview2.PNG">
 
