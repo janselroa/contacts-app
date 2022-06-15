@@ -1,0 +1,35 @@
+<script src="/public/js/index.js" defer></script>
+<script src="/public/js/edit.js" defer></script>
+<div class="new">+</div>
+<form action="/contacts" method="POST" class="create-contacts"  enctype="multipart/form-data">
+	<div class="img-content">
+		<input type="file" name="profile" class="file">
+		<p>Selecionar imagen</p>
+	</div>
+	<div class="inputs">
+		<input type="text" name="name" placeholder="Name ">
+		<input type="email" name="email" placeholder="Email ">
+		<input type="submit" value="Crear">
+		<a href="/contacts"></a>
+	</div>
+</form>
+<div class="flex contacts">
+{{#each contacts}}
+	<div class="contact">
+		<img src="/public/img/uploads/{{this.profile}}" class="profile-img contact-img">
+		<div>
+			<h2>{{this.name}}</h2>
+			<p>{{this.email}}</p>
+			<div>
+				<a href="#" class="btn edit">Editar</a>
+				<a href="/contacts/delete/{{this.id}}" class="btn delete">Eliminar</a>
+			</div>
+		</div>
+	</div>
+{{/each}}
+</div>
+<script>
+	document.querySelector(".new").addEventListener("click",()=>{
+		document.querySelector(".create-contacts").classList.toggle("display")
+	})
+</script>

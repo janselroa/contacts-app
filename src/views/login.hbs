@@ -1,0 +1,12 @@
+{{#if message}}
+	<div class="message">
+		<p>{{message}}</p>
+	</div>
+{{/if}}
+<h1>Inicio de sesion</h1>
+<form action="/login" method="POST" class="login">
+	<input type="email" name="email" placeholder="Email ">
+	<input type="password" name="password" placeholder="Contraseña ">
+	<input type="submit">
+	<a href="/register">Aun no tengo cuenta</a>
+</form>

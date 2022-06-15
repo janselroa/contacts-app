@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/public/css/styles.css">
+	<title>Document</title>
+</head>
+<body>
+	<nav class="nav">
+		<ul class="menu">
+			<li><a href="/">Inicio<a/></li>
+			<li><a href="#">About<a/></li>
+			<li class="acount"><a href="/count">Mi Cuenta<a/></li>
+		</ul>
+		<img class="icon-menu" src="/public/img/menu.png">
+	</nav>
+	{{{body}}}
+	<footer>
+		<p>Created by <a href="https://github.com/janselroa">Jansel Roa</a></p>
+	</footer>
+	<script>
+		const btn = document.querySelector(".icon-menu")
+		const menu = document.querySelector(".menu")
+		btn.addEventListener("click",()=>menu.classList.toggle("show-nav"))
+	</script>
+</body>
+</html>

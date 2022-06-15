@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+:root{
+	color-scheme: dark;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+@media screen and (max-width: 700px){
+/*Mobile styles*/
+	.icon-menu{
+		display: block;
+	}
+	.menu{
+		display: none;
+		margin-top: 50px;
+	}
+	.menu li{
+		margin: 10px 0;
+	}
+
+}
+.show-nav{
+	display: block;
+}
+@media screen and (min-width: 700px){
+	.nav{
+		width: 100%;
+	}
+	.menu{
+		display: flex;
+		justify-content: center;
+	}
+	.menu li{
+		margin-left: 30px;
+	}
+	.icon-menu{
+		display: none;
+	}
+}
+.menu li{
+	padding: 5px;
+	border-bottom: 1px solid transparent;
+}
+.menu li:hover{
+	border-color: #fff;
+}
+h1{
+	font-size: 2.5rem;
+	text-align: center;
+}
+header img{
+	width: 100%;
+	object-fit: contain;
+	height: 400px;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.btn{
+	padding: 10px;
+	color: #fff;
+	background-color: #0af;
+	margin-left: 10px;
+}
+.btn: hover{
+	cursor: pointer;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+
+}
+.login{
+	justify-content: center;
+	width: 300px;
+	margin: auto;
+}
+.login input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom:10px;
+}
+input{
+	outline: none;
+}
+input[type="submit"]{
+	cursor: pointer;
+	width: calc(100% + 22px);
+}
+.message{
+	text-align: center;
+	width: auto;
+	background-color: #d4edda;
+	color: #000;
+	margin: 10px 100px;
+	padding: 10px;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+@keyFrames desaparacer{
+	0%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+.message{
+	animation: desaparacer 5s;
+	animation-fill-mode: forwards;
+}
+
+form img{
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	object-fit: cover;
+}
+.img-content{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: no-repeat url("/public/img/uploads/profile.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 10px auto;
+	position: relative;
+}
+.img-content input{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+}
+.img-content p{
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	opacity: 0;
+}
+.img-content:hover{
+	background-blend-mode: multiply;
+	background-color: #333;
+}
+.img-content:hover>p{
+	opacity: 1;
+}
+input:hover{
+	cursor:pointer;
+}
+.delete{
+	background-color: #f33;
+}
+.green{
+	background-color: #3a3;
+}
+.profile{
+	width: 100%;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+.profile img,.profile-img{
+	width: 250px;
+	height: 250px;
+	border-radius: 200px;
+	margin: 10px;
+	object-fit: cover;
+}
+.profile h1{
+	font-size: 2rem;
+	padding: 10px;
+}
+.profile p{
+	padding: 10px;
+}
+body{
+    display:flex;
+    flex-direction:column;
+}
+footer{
+    padding-top:200px;
+	text-align: center;
+	width: 95%;
+    margin-top:auto;
+}
+.create-contacts{
+	position: relative;
+	width: 600px;
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 100px auto;
+	padding: 20px;
+	align-items: center;
+	box-shadow: 0px 0px 20px #000;
+}
+.create-contacts div{
+	width: 250px;
+	margin-left: 20px;
+}
+.create-contacts .img-content{
+	height: 250px;
+	border-radius: 300px;
+}
+.create-contacts input{
+	width: 100%;
+	padding: 8px;
+	margin: 3px 0;
+}
+.inputs{
+	margin-right: 30px;
+}
+.create-contacts input[type="submit"]{
+	cursor: pointer;
+	width: calc(100% + 22px);
+	background-color: hsla(200, 100%, 50%, 1.0);
+	border: none;
+}
+
+.new{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 2rem;
+	padding: 5px;
+	margin: 20px;
+	background-color: hsla(200, 100%, 50%, 1.0);
+}
+.new:hover{
+	cursor: pointer;
+	background-color: hsla(200, 100%, 40%, 1.0);
+}
+.display{
+	display: flex;
+}
+.contact{
+	width: 400px;
+	height: 200px;
+	box-shadow: 0px 0px 20px #000a;
+	display: flex;
+	margin: 20px;
+}
+.contact div, .contact img{
+	margin-top: 30px;
+}
+.contact-img{
+	width:150px;
+	height:150px;
+	margin-right: 20px;
+}
+.contacts{
+	flex-wrap: wrap;
+}
+.icon-menu{
+	position:absolute;
+	top: 5px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+}
+.icon-menu:hover{
+	cursor: pointer;
+}

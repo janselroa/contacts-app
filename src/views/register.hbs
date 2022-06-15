@@ -1,0 +1,13 @@
+<h1>Cree una cuenta</h1>
+<form action="/register" method="POST" class="login" enctype="multipart/form-data">
+	<div class="img-content">
+		<input type="file" name="profile" class="file">
+		<p>Selecionar imagen</p>
+	</div>
+	<input type="text" name="name" placeholder="Name " required>
+	<input type="email" name="email" placeholder="Email " required>
+	<input type="password" name="password" placeholder="Contraseña " required>
+	<input type="submit">
+	<a href="/login">Ya tengo cuenta</a>
+</form>
+<script src="/public/js/index.js"></script>
