@@ -27,3 +27,9 @@ yarn install
 ```
 yarn dev
 ```
+
+Despues de descargar el archivo ejecute el servidor mysql, ya sea con wampserver o xamp
+ingrese a la terminal de mysql y escriba
+```
+source [pathproyect]\query.sql
+```
